@@ -1,416 +1,277 @@
-  <!doctype html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <link rel="icon" type="image/svg+xml" href="./img/logo_ceep.png" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>meu-projeto</title>
-    </head>
-    <body class="p-0 m-0 flex">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/logo_ceep.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meu-projeto</title>
+  </head>
+  <body class="p-0 m-0 flex">
 
-      <div id="app"></div>
+    <div id="app"></div>
 
-        <div class="w-screen h-screen">
+    <div class="w-screen h-screen">
 
-  <!-- cabecalho-->
+      <header class="w-screen h-20 bg-white border-b-2 flex justify-between items-center fixed px-2 gap-10 z-20">
 
+        <div class="m-2 flex items-center">
+          <img class="h-10" src="./img/logo_ceep.png" alt="">
+          <span class="ml-2">CEEP Cascavel</span>
+        </div>
 
-      <header
-        class="w-screen h-20 bg-white border-b-2 flex justify-between items-center fixed px-2 gap-10 z-20">
-              
-              <!-- #logo-->
+        <nav class="text-center">
+          <ul class="flex gap-4">
+            <li>Inicio</li>
+            <li>Nossos Cursos</li>
+            <li>Noticias</li>
+            <li>Contato</li>
+            <li>Increva-se</li>
+          </ul>
+        </nav>
 
-              <div class="m-2 flex items-center"><img class="h-10" src="./img/logo_ceep.png" alt=""> 
-                <span class="ml-2">CEEP Cascavel</span>
-              </div>
+        <div class="h-10 w-36"></div>
+      </header>
 
-                <!--#navegacao-->
+      <div class="relative w-screen min-h-screen pt-20">
+        <img src="./img/fachada_ceep.png" class="absolute inset-0 w-screen min-h-screen object-cover" alt="" />
 
-  <nav class=" text-center ">
-              <ul class="flex gap-4">
-                  <li>
-                    Inicio
-                  </li>
-                  <li>
-                    Nossos Cursos
-                  </li>
-                  <li>
-                    Noticias
-                  </li>
-                  <li>
-                    Contato
-                  </li>
-                  <li>
-                    Increva-se
-                  </li>
-                </ul>
+        <div class="absolute inset-0 bg-black/75"></div>
 
-              </nav>
-              
-              
-              <!--Para centralizar a navegacao-->
+        <div class="relative z-10">
 
-              <div class="h-10 w-36">
+          <div class="ml-4 mt-8 pb-20">
+            <h1 class="text-4xl font-bold text-white">
+              Formando profissionais para o <br />
+              futuro com excelência técnica e humana.
+            </h1>
 
-              </div>
-              </header>
+            <div class="h-6 w-28 mt-2 bg-ceep_green text-center rounded-2xl">
+              <h1 class="text-white font-bold">Desde 1978</h1>
+            </div>
 
-              <!--Background-->
+            <p class="mt-5 w-3xl text-white font-semibold">
+              Nosso colégio oferece uma educação de qualidade, unindo o Ensino Médio à formação em Cursos Técnicos, preparando os alunos tanto para o mercado de trabalho quanto para o ingresso no ensino superior. Através de uma proposta pedagógica moderna, buscamos desenvolver o conhecimento, a responsabilidade e as habilidades práticas dos estudantes.
+              Além do Ensino Médio integrado ao curso técnico, também disponibilizamos o Ensino Técnico Subsequente, voltado para quem já concluiu o Ensino Médio e deseja se qualificar profissionalmente. Os cursos são pensados para atender às demandas atuais do mercado, com aulas teóricas e práticas.
+              Contamos com professores qualificados, estrutura adequada e um ambiente que valoriza o aprendizado, a inovação e o crescimento pessoal. Nosso compromisso é formar profissionais capacitados e cidadãos preparados para os desafios do futuro.
+            </p>
 
-          <div class="relative w-screen min-h-screen pt-20">
-    <img
-      src="./img/fachada_ceep.png"
-      class="absolute inset-0 w-screen min-h-screen object-cover"
-      alt=""
-    />
-
-    <!-- Overlay -->
-
-    <div class="absolute inset-0 bg-black/75"></div>
-
-
-    <!-- Conteúdo -->
-
-    <div class="relative z-10  ">
-
-      <!--Conteudo inicial-->
-
-      <div class="ml-4 mt-8 pb-20" >
-
-        <h1 class="text-4xl font-bold text-white">
-          Formando profissionais para o <br />
-          futuro com excelência técnica e humana.
-        </h1>
-
-        <div class="h-6 w-28 mt-2 bg-ceep_green  text-center rounded-2xl"><h1 class="text-white font-bold">Desde 1978</h1></div>
-
-          <p class="mt-5 w-3xl text-white font-semibold">Nosso colégio oferece uma educação de qualidade, unindo o Ensino Médio à formação em Cursos Técnicos, preparando os alunos tanto para o mercado de trabalho quanto para o ingresso no ensino superior. Através de uma proposta pedagógica moderna, buscamos desenvolver o conhecimento, a responsabilidade e as habilidades práticas dos estudantes.
-  Além do Ensino Médio integrado ao curso técnico, também disponibilizamos o Ensino Técnico Subsequente, voltado para quem já concluiu o Ensino Médio e deseja se qualificar profissionalmente. Os cursos são pensados para atender às demandas atuais do mercado, com aulas teóricas e práticas.
-  Contamos com professores qualificados, estrutura adequada e um ambiente que valoriza o aprendizado, a inovação e o crescimento pessoal. Nosso compromisso é formar profissionais capacitados e cidadãos preparados para os desafios do futuro.</p>
-
-            <div class=" mt-5 font-bold text-white text-2xl ">
-              <button class="h-10 w-48 bg-ceep_green rounded-2xl mr-2 " onclick="window.location.href='https://example.com'">Increver-se</button>
-              <button class="h-10 w-48 bg-ceep_blue rounded-2xl " onclick="window.location.href='https://example.com'">Ver Resultado</button>
+            <div class="mt-5 font-bold text-white text-2xl">
+              <button class="h-10 w-48 bg-ceep_green rounded-2xl mr-2 hover:cursor-pointer hover:bg-ceep_black_green focus:scale-95" onclick="window.location.href='https://example.com'">Increver-se</button>
+              <button class="h-10 w-48 bg-ceep_blue rounded-2xl hover:cursor-pointer hover:bg-ceep_black_blue focus:scale-95" onclick="window.location.href='https://example.com'">Ver Resultado</button>
             </div>
 
             <hr class="h-0.5 w-7/12 mt-5 bg-white rounded-2xl">
 
-          <div class="flex justify-between w-7/12 mt-5">
-    <div class="text-center">
-      <h1 class="text-4xl text-ceep_green font-bold">47+</h1>
-      <h2 class="text-white">Anos de Tradição</h2>
-    </div>
-    <div class="text-center">
-      <h1 class="text-4xl text-ceep_green font-bold">10</h1>
-      <h2 class="text-white">Cursos Técnicos</h2>
-    </div>
-    <div class="text-center">
-      <h1 class="text-4xl text-ceep_green font-bold">15+</h1>
-      <h2 class="text-white">Laboratórios Diversos</h2>
-    </div>
-  </div>
+            <div class="flex justify-between w-7/12 mt-5">
+              <div class="text-center">
+                <h1 class="text-4xl text-ceep_green font-bold">47+</h1>
+                <h2 class="text-white">Anos de Tradição</h2>
+              </div>
+              <div class="text-center">
+                <h1 class="text-4xl text-ceep_green font-bold">10</h1>
+                <h2 class="text-white">Cursos Técnicos</h2>
+              </div>
+              <div class="text-center">
+                <h1 class="text-4xl text-ceep_green font-bold">15+</h1>
+                <h2 class="text-white">Laboratórios Diversos</h2>
+              </div>
+            </div>
 
+            </div>
 
-              <!--final do conteudo inicial-->
+          <section class="bg-white w-full">
+
+            <div class="py-16 px-4">
+              <div class="mb-10 text-4xl font-bold text-center">
+                <h1>Conheça nossos Cursos</h1>
+              </div>
+              <div class="text-2xl mt-50 text-ceep_blue font-bold text-center">
+                <h1>Integrados ao ensino médio</h1>
+              </div>
+            </div>
+
+            <div class="w-screen px-20 grid grid-cols-3">
+
+              <div class="h-96 w-70 0 m-10 bg-transparent border-2 border-black rounded-2xl">
+                <img class="h-40 rounded-t-2xl" src="./img/fachada_ceep.png" alt="">
+                <div class="w-full h-10 justify-between items-center text-center flex mt-3">
+                  <div class="h-10 w-10 bg-ceep_blue m-5 rounded-full"></div>
+                  <h1 class="font-bold text-ceep_blue">Administração</h1>
+                  <div class="w-25"></div>
+                </div>
+                <div class="flex w-1/2">
+                  <ul class="flex mx-5">
+                    <li class="mr-5">Matutino</li>
+                    <li>Verspentino</li>
+                  </ul>
+                </div>
+                <div class="mx-5 my-5 w-60 text-ceep_blue">
+                  <h2>Forme-se em gestão de pessoas e sla oq</h2>
+                </div>
+                <div class="w-full justify-center items-center flex">
+                  <button class="h-10 w-50 bg-transparent border-2 border-ceep_blue rounded-2xl text-ceep_blue">Saiba Mais</button>
+                </div>
+              </div>
+
+              <div class="h-96 w-70 0 m-10 bg-transparent border-2 border-black rounded-2xl">
+                <img class="h-40 rounded-t-2xl" src="./img/fachada_ceep.png" alt="">
+                <div class="w-full h-10 justify-between items-center text-center flex mt-3">
+                  <div class="h-10 w-10 bg-ceep_blue m-5 rounded-full"></div>
+                  <h1 class="font-bold text-ceep_blue">Administração</h1>
+                  <div class="w-25"></div>
+                </div>
+                <div class="flex w-1/2">
+                  <ul class="flex mx-5">
+                    <li class="mr-5">Matutino</li>
+                    <li>Verspentino</li>
+                  </ul>
+                </div>
+                <div class="mx-5 my-5 w-60 text-ceep_blue">
+                  <h2>Forme-se em gestão de pessoas e sla oq</h2>
+                </div>
+                <div class="w-full justify-center items-center flex">
+                  <button class="h-10 w-50 bg-transparent border-2 border-ceep_blue rounded-2xl text-ceep_blue">Saiba Mais</button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="text-2xl text-ceep_green font-bold text-center">
+              <h1>Subsequente</h1>
+            </div>
+
+            <div class="w-screen px-20 grid grid-cols-3">
+
+              <div class="h-96 w-70 0 m-10 bg-transparent border-2 border-black rounded-2xl">
+                <img class="h-40 rounded-t-2xl" src="./img/fachada_ceep.png" alt="">
+                <div class="w-full h-10 justify-between items-center text-center flex mt-3">
+                  <div class="h-10 w-10 bg-ceep_green m-5 rounded-full"></div>
+                </div>
+                <h1 class="font-bold mx-5 text-ceep_green">Administração</h1>
+                <div class="w-25"></div>
+                <div class="flex w-1/2">
+                  <ul class="flex mx-5">
+                    <li class="mr-5">Matutino</li>
+                    <li>Verspentino</li>
+                  </ul>
+                </div>
+                <div class="mx-5 w-60 text-ceep_green">
+                  <h2>Forme-se em gestão de pessoas e sla oq</h2>
+                </div>
+                <div class="w-full justify-center items-center flex">
+                  <button class="h-10 w-50 my-5 bg-transparent border-2 border-ceep_green rounded-2xl text-ceep_green">Saiba Mais</button>
+                </div>
+              </div>
+
+              <div class="h-96 w-70 0 m-10 bg-transparent border-2 border-black rounded-2xl">
+                <img class="h-40 rounded-t-2xl" src="./img/fachada_ceep.png" alt="">
+                <div class="w-full h-10 justify-between items-center text-center flex mt-3">
+                  <div class="h-10 w-10 bg-ceep_green m-5 rounded-full"></div>
+                </div>
+                <h1 class="font-bold mx-5 text-ceep_green">Administração</h1>
+                <div class="w-25"></div>
+                <div class="flex w-1/2">
+                  <ul class="flex mx-5">
+                    <li class="mr-5">Matutino</li>
+                    <li>Verspentino</li>
+                  </ul>
+                </div>
+                <div class="mx-5 w-60 text-ceep_green">
+                  <h2>Forme-se em gestão de pessoas e sla oq</h2>
+                </div>
+                <div class="w-full justify-center items-center flex">
+                  <button class="h-10 w-50 my-5 bg-transparent border-2 border-ceep_green rounded-2xl text-ceep_green hover:bg-ceep_green hover:text-white transform transition-all duration-300">Saiba Mais</button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="w-full p-20 bg-gray-300">
+
+              <div class="w-full text-center text-black font-bold text-4xl">
+                <h1>Noticias</h1>
+              </div>
+
+              <div class="w-full mt-10 p-2 bg-gray-400 flex">
+                <div class="h-70 w-1/2 bg-black">
+                  <img class="h-full" src="./img/fachada_ceep.png" alt="">
+                </div>
+                <div>
+                  <div class="w-3/4 mx-5">
+                    <h1 class="text-2xl font-bold">Ceep irá abrir 160 novas vagas e mais 2 cursos técnicos em 2026, veja quais são eles...</h1>
+                    <div>
+                      <p>Inteligência Artificial e Design de Interiores, veja mais sobre os 2 novos cursos técnicos do CEEP, suas características, áreas de atuação e disponibilidade.</p>
+                    </div>
+                    <div class="mt-full text-gray-200">
+                      <p>20/11/2025 | 08:52</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full mt-10 p-2 bg-gray-400 flex">
+                <div class="h-70 w-1/2 bg-black">
+                  <img class="h-full" src="./img/fachada_ceep.png" alt="">
+                </div>
+                <div>
+                  <div class="w-3/4 mx-5">
+                    <h1 class="text-2xl font-bold">Inscrições Unioeste 2026</h1>
+                    <div>
+                      <p>A Universidade Estadual do Oeste do Paraná (Unioeste), está de portas abertas para as inscrições de 2026, veja como fazer sua inscrição e quais cursos estão disponíveis.</p>
+                    </div>
+                    <div class="mt-full text-gray-200">
+                      <p>12/05/2026 | 16:04</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full h-10 m-5 items-center justify-between text-center">
+                <button class="w-60 h-10 bg-ceep_green text-white m">Ver mais</button>
+              </div>
+            </div>
+
+            <div class="w-full text-center text-4xl mt-5 font-semibold">
+              <h1>Estrutura</h1>
+            </div>
+            <div class="w-full grid grid-cols-3 p-20">
+              <div class="h-50 w-80 bg-black mr-5 mt-5">
+                <img class="h-50" src="./img/fachada_ceep.png" alt="">
+              </div>
+              <div class="h-50 w-80 bg-black mr-5 mt-5">
+                <img class="h-50" src="./img/fachada_ceep.png" alt="">
+              </div>
+              <div class="h-50 w-80 bg-black mr-5 mt-5">
+                <img class="h-50" src="./img/fachada_ceep.png" alt="">
+              </div>
+              <div class="h-50 w-80 bg-black mr-5 mt-5">
+                <img class="h-50" src="./img/fachada_ceep.png" alt="">
+              </div>
+            </div>
+
+            <footer class="h-50 w-full bg-ceep_blue p-10 flex">
+              <div class="w-1/3 text-white">
+                <div class="flex">
+                  <img class="h-10" src="./img/logo_ceep.png" alt="">
+                  <h1 class="ml-5">Sobre-nos</h1>
+                </div>
+                <h1>Endereço: R Natal, 2800-Centro, Cascavel - PR</h1>
+                <h1>Contato: (99) 99999-9999</h1>
+                <h1>Instagram @ceep</h1>
+              </div>
+              <div class="w-1/3"></div>
+              <div class="w-1/3 text-white text">
+                <p>No CEEP Pedro Boaretto Neto, cada estudante é convidado a olhar além do óbvio e questionar o mundo ao seu redor. Aqui, a formação técnica e a formação humana caminham juntas: você aprende, pratica, erra, corrige e evolui. Nada é aceito “porque sim” — buscamos entender, investigar e transformar.</p>
+              </div>
+            </footer>
+
+          </section>
+          </div>
       </div>
-
-
-
-              <!--Informações cursos-->
-
-              <section class="bg-white w-full ">
-
-    <div class=" py-16 px-4 ">
-        <div class="mb-10 text-4xl font-bold text-center"><h1>Conheça nossos Cursos</h1></div>
-        
-      <div class=" text-2xl mt-50 text-ceep_blue font-bold text-center"><h1>Integrados ao ensino médio</h1></div>
-
-    </div>
-      <!--Cursos banners integrados-->
-
-      <div class="w-screen px-20 grid grid-cols-3">
-
-
-        <!--Card curso-->
-
-  <div class="h-96 w-70  0 m-10  bg-transparent border-2 border-black rounded-2xl">
-
-    <img class=" h-40 rounded-t-2xl" src="./img/fachada_ceep.png" alt="">
-    <div class="w-full h-10 justify-between items-center text-center flex mt-3">
-      <div class="h-10 w-10 bg-ceep_blue m-5 rounded-full "></div>
-      <h1 class="font-bold text-ceep_blue">Administração</h1>
-      <div class="w-25"></div>
-    </div>
-
-    <div class="flex w-1/2">
-      <ul class="flex mx-5">
-        <li class="mr-5">Matutino</li>
-        <li>Verspentino</li>
-      </ul>
-    </div>
-
-    <div class="mx-5 my-5 w-60 text-ceep_blue">
-      <h2>Forme-se em gestão de pessoas e sla oq</h2>
-    </div>
-    <div class="w-full justify-center items-center flex">
-
-        <button class="h-10 w-50  bg-transparent border-2 border-ceep_blue rounded-2xl text-ceep_blue ">Saiba Mais</button>
-    
-    </div>
-    
-
-    </div>
-    
-    <div class="h-96 w-70  0 m-10  bg-transparent border-2 border-black rounded-2xl">
-
-    <img class=" h-40 rounded-t-2xl" src="./img/fachada_ceep.png" alt="">
-    <div class="w-full h-10 justify-between items-center text-center flex mt-3">
-      <div class="h-10 w-10 bg-ceep_blue m-5 rounded-full "></div>
-      <h1 class="font-bold text-ceep_blue">Administração</h1>
-      <div class="w-25"></div>
-    </div>
-
-    <div class="flex w-1/2">
-      <ul class="flex mx-5">
-        <li class="mr-5">Matutino</li>
-        <li>Verspentino</li>
-      </ul>
-    </div>
-
-    <div class="mx-5 my-5 w-60 text-ceep_blue">
-      <h2>Forme-se em gestão de pessoas e sla oq</h2>
-    </div>
-    <div class="w-full justify-center items-center flex">
-
-        <button class="h-10 w-50  bg-transparent border-2 border-ceep_blue rounded-2xl text-ceep_blue ">Saiba Mais</button>
-    
-    </div>
-    
-
-    </div>
-
-    
-    
       </div>
-
-      
-    
-    <!--Cursos banners subsequente-->
-
-        <div class=" text-2xl  text-ceep_green font-bold text-center"><h1>Subsequente</h1></div>
-
-      <div class="w-screen px-20 grid grid-cols-3">
-
-    <div class="h-96 w-70  0 m-10  bg-transparent border-2 border-black rounded-2xl">
-
-    <img class=" h-40 rounded-t-2xl" src="./img/fachada_ceep.png" alt="">
-    <div class="w-full h-10 justify-between items-center text-center flex mt-3">
-      <div class="h-10 w-10 bg-ceep_green m-5 rounded-full "></div>
-      
-    </div>
-    <h1 class="font-bold mx-5 text-ceep_green">Administração</h1>
-    <div class="w-25"></div>
-    <div class="flex w-1/2">
-
-      <ul class="flex mx-5">
-
-        <li class="mr-5">Matutino</li>
-
-        <li>Verspentino</li>
-
-      </ul>
-
-    </div>
-
-    <div class="mx-5  w-60 text-ceep_green">
-      <h2>Forme-se em gestão de pessoas e sla oq</h2>
-    </div>
-    <div class="w-full justify-center items-center flex">
-
-        <button class="h-10 w-50 my-5  bg-transparent border-2 border-ceep_green rounded-2xl text-ceep_green ">Saiba Mais</button>
     
     </div>
     </div>
-
-    <div class="h-96 w-70  0 m-10  bg-transparent border-2 border-black rounded-2xl">
-
-    <img class=" h-40 rounded-t-2xl" src="./img/fachada_ceep.png" alt="">
-    <div class="w-full h-10 justify-between items-center text-center flex mt-3">
-      <div class="h-10 w-10 bg-ceep_green m-5 rounded-full "></div>
-      
-    </div>
-    <h1 class="font-bold mx-5 text-ceep_green">Administração</h1>
-    <div class="w-25"></div>
-    <div class="flex w-1/2">
-
-      <ul class="flex mx-5">
-
-        <li class="mr-5">Matutino</li>
-
-        <li>Verspentino</li>
-
-      </ul>
-
-    </div>
-
-    <div class="mx-5  w-60 text-ceep_green">
-      <h2>Forme-se em gestão de pessoas e sla oq</h2>
-    </div>
-    <div class="w-full justify-center items-center flex">
-
-        <button class="h-10 w-50 my-5  bg-transparent border-2 border-ceep_green rounded-2xl text-ceep_green hover:bg-ceep_green hover:text-white transform transition-all duration-300">Saiba Mais</button>
     
-    </div>
-    
-
-    </div>
-
-  </div>
-
-
-      <!--Container de Noticcias geral-->
-      <div class="w-full p-20 bg-gray-300 ">
-
-
-        <!--titulo-->
-        <div class="w-full text-center text-black font-bold text-4xl ">
-          <h1>Noticias</h1>
-        </div>
-
-        <!--Noticias info-->
-
-        <div class="w-full mt-10 p-2 bg-gray-400 flex">
-
-          <!--Noticias card-->
-          
-            <div class="h-70 w-1/2 bg-black ">
-              <img class="h-full" src="./img/fachada_ceep.png" alt="">
-            </div>
-            <!--textos noticias-->
-            <div>
-              <div class="w-3/4 mx-5 "><h1 class="text-2xl font-bold">Ceep irá abrir 160 novas vagas e mais 2 cursos técnicos em 2026, veja quais são eles...
-              </h1>
-              <div>
-                <p>Inteligência Artificial e Design de Interiores, veja mais sobre os 2 novos cursos técnicos do CEEP, suas características, áreas de atuação e disponibilidade.</p>
-              </div>
-              <div class="mt-full text-gray-200">
-                <p>
-                  20/11/2025 | 08:52
-                </p>
-              </div>
-
-              
-              </div>
-              
-            </div>
-          
-
-          
-
-        
-          </div>
-
-          <!--Noticias info fim-->
-
-
-          <!--Noticias info-->
-
-        <div class="w-full mt-10 p-2 bg-gray-400 flex">
-
-          <!--Noticias card-->
-          
-            <div class="h-70 w-1/2 bg-black ">
-              <img class="h-full" src="./img/fachada_ceep.png" alt="">
-            </div>
-            <!--textos noticias-->
-            <div>
-              <div class="w-3/4 mx-5 "><h1 class="text-2xl font-bold">Inscrições Unioeste 2026
-              </h1>
-              <div>
-                <p>A Universidade Estadual do Oeste do Paraná (Unioeste), está de portas abertas para as inscrições de 2026, veja como fazer sua inscrição e quais cursos estão disponíveis.</p>
-              </div>
-              <div class="mt-full text-gray-200">
-                <p>
-                  12/05/2026 | 16:04
-                </p>
-              </div>
-             
-
-              
-              </div>
-              
-            </div>
-          
-          </div>
-
-          <!--Noticias info fim-->
-          
-          <!--Button ver mais-->
-          <div class="w-full h-10 m-5 items-center justify-between text-center">
-          <button class="w-60 h-10  bg-ceep_green  text-white m">Ver mais</button>
-        </div>
-        </div>
-
-        <!--estrutura-->
-        <div class="w-full grid grid-cols-3 p-20">
-          <div class="h-50 w-80 bg-black mr-5 mt-5">
-              <img class="h-50" src="./img/fachada_ceep.png" alt="">
-          </div>
-
-           <div class="h-50 w-80 bg-black mr-5 mt-5">
-              <img class="h-50" src="./img/fachada_ceep.png" alt="">
-          </div>
-
-           <div class="h-50 w-80 bg-black mr-5 mt-5">
-              <img class="h-50" src="./img/fachada_ceep.png" alt="">
-          </div>
-
-           <div class="h-50 w-80 bg-black mr-5 mt-5">
-              <img class="h-50" src="./img/fachada_ceep.png" alt="">
-          </div>
-
-        </div>
-            </div>
-          
-
-          
-
-        
-          </div>
-        <footer class="h-40 w-full bg-ceep_blue p-10">
-          <div class="w-1/3  flex">
-              <img class="h-10" src="./img/logo_ceep.png" alt="">
-              <h1 class="ml-5 text-white">Sobre-nos</h1>
-          </div>
-        </footer>
-      </div> 
-      </div>
-     
-  </section>
-
-
-
-      <!--final do conteudo-->
-    </div>
-  </div>
-
-          <!--final da div do background-->
-  </div>
-
-                  
-          
-                  
-                
-              </div>
-
-        </div>
-      
-
-
-
   <script type="module" src="/src/main.js"></script>
 
-  
   </body>
-  </html>
-    
+</html>
