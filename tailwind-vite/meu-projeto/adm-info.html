@@ -27,11 +27,11 @@
 
       <nav>
         <ul class="flex gap-4">
-          <li class="cursor-pointer hover:text-ceep_blue">Início</li>
-          <li class="cursor-pointer hover:text-ceep_blue">Nossos Cursos</li>
-          <li class="cursor-pointer hover:text-ceep_blue">Notícias</li>
-          <li class="cursor-pointer hover:text-ceep_blue">Contato</li>
-          <li class="cursor-pointer hover:text-ceep_blue">Inscreva-se</li>
+          <a href="index.html"><li class="cursor-pointer transition-all duration-500 hover:text-ceep_blue hover:underline hover:font-bold">Inicio</li></a>
+          <a href="index.html"><li class="cursor-pointer transition-all duration-300 hover:text-ceep_blue hover:underline hover:font-bold">Nossos Cursos</li></a>
+          <li class="cursor-pointer transition-all duration-300 hover:text-ceep_blue hover:underline hover:font-bold">Notícias</li>
+          <li class="cursor-pointer transition-all duration-300 hover:text-ceep_blue hover:underline hover:font-bold">Contato</li>
+          <li class="cursor-pointer transition-all duration-300 hover:text-ceep_blue hover:underline hover:font-bold hover:text-lg">Inscreva-se</li>
         </ul>
       </nav>
 
@@ -39,10 +39,8 @@
     </header>
 
     <div>
-       <div class="relative w-screen h-40 pt-20">
-        <img src="./img/fachada_ceep.png" class="absolute inset-0 w-screen h-40 object-cover" alt="" />
-
-        <div class="absolute inset-0 bg-black/75"></div>
+       <div class="relative w-screen h-50 p-20 bg-ceep_blue">
+        
 
         <div class="relative z-10">
          <div class="ml-10"> 
@@ -52,14 +50,23 @@
 </div>
 
         <div class="w-full min-h-screen">
-          <div class="w-2/4 m-10">
+          <div class="w-full flex  justify-between ">
+
+          
+          <div class="w-2/5 m-10 mt-5 bg-white rounded-2xl p-10 shadow-2xl">
             <p>No curso de Administração você desenvolverá competências para atuar em diversos ambientes organizacionais. Criará habilidades de negociação, decisão, liderança e criatividade para o trabalho individual e em equipe. Na Administração FAG você se tornará um profissional responsável pelo planejamento e execução de ações que visem aproveitar ao máximo os recursos financeiros, humanos e materiais. Além disso, o curso desenvolve aulas práticas em empresas e em laboratórios com softwares adequados, visitas técnicas e projetos de extensão em programas sociais.</p></div>
 
-            <div class="w-full items-center text-center justify-center">
+
+            <div class="w-2/5 m-10 mt-5 bg-white rounded-2xl rounded-2xl shadow-2xl">
+            <img class="w-full h-full object-cover rounded-2xl" src="./img/fachada_ceep.png" alt="">
+            </div>
+          </div>
+
+            <div class="w-full  ">
                 <h1 class="text-center text-2xl font-bold">Matriz curricular</h1>
-                <div class="w-full flex items-center justify-center">
+                <div class="w-full flex ">
                 <ul class="justify-center text-center">
-                  <li class="w-40 h-10 m-5 p-1 rounded-2xl border-2 border-black text-2xl flex">1 tri</li>
+                  <li class="w-80 h-10 transition-all duration-400 hover:border-gray-200  hover:border-2  hover:shadow-2xl hover:text-2xl hover:text-gray-700">1 tri</li>
                   <li>2 tri</li>
                   <li>3  tri</li>
                 </ul>
