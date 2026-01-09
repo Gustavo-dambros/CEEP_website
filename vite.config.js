@@ -8,7 +8,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        'adm-info': './adm-info.html',
+        'administracao': './administracao.html',
+        'analise_e_desenvolvimento': './ads.html',
       },
     },
   },
