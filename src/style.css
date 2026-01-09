@@ -1,5 +1,2 @@
 @config "../tailwind.config.js";
-// #region agent log
-/* CSS loaded - checking Tailwind import */
-// #endregion
 @import "tailwindcss";
