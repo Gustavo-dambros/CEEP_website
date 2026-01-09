@@ -8,6 +8,16 @@
 
     <!-- IMPORTANTE: Tailwind entra por aqui -->
     <script type="module" src="/src/main.js"></script>
+    <script>
+      // #region agent log
+      fetch('http://127.0.0.1:7242/ingest/b6ea2c2b-23a1-4f9e-bdc5-74d585ae831d',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'adm-info.html:script',message:'Script tag executed',data:{scriptSrc:'/src/main.js',timestamp:Date.now()},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix',hypothesisId:'A'})}).catch(()=>{});
+      // #endregion
+      window.addEventListener('error', function(e) {
+        // #region agent log
+        fetch('http://127.0.0.1:7242/ingest/b6ea2c2b-23a1-4f9e-bdc5-74d585ae831d',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'adm-info.html:error',message:'JavaScript error caught',data:{message:e.message,filename:e.filename,lineno:e.lineno,timestamp:Date.now()},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+        // #endregion
+      });
+    </script>
   </head>
 
   <body class="m-0 p-0">
@@ -60,7 +70,7 @@
           <div class="w-full md:w-2/5 px-4  mt-5 bg-white rounded-2xl p-6  shadow-2xl">
             <p class="max-w-4xl mx-auto px-4 text-sm sm:text-base md:text-lg leading-relaxed">No curso de Administração você desenvolverá competências para atuar em diversos ambientes organizacionais. Criará habilidades de negociação, decisão, liderança e criatividade para o trabalho individual e em equipe. Na Administração FAG você se tornará um profissional responsável pelo planejamento e execução de ações que visem aproveitar ao máximo os recursos financeiros, humanos e materiais. Além disso, o curso desenvolve aulas práticas em empresas e em laboratórios com softwares adequados, visitas técnicas e projetos de extensão em programas sociais.</p>
             <div class="w-full flex justify-end ">
-            <img src="/img/administração_logo.png" class="h-1/10 w-1/10" alt="">
+            <img src="./img/administração_logo.png" class="h-1/10 w-1/10" alt="">
           </div>  
           </div>
 

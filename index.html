@@ -319,6 +319,16 @@
     </footer>
     
   <script type="module" src="/src/main.js"></script>
+  <script>
+    // #region agent log
+      fetch('http://127.0.0.1:7242/ingest/b6ea2c2b-23a1-4f9e-bdc5-74d585ae831d',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'index.html:script',message:'Script tag executed',data:{scriptSrc:'/src/main.js',timestamp:Date.now()},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix',hypothesisId:'A'})}).catch(()=>{});
+    // #endregion
+    window.addEventListener('error', function(e) {
+      // #region agent log
+      fetch('http://127.0.0.1:7242/ingest/b6ea2c2b-23a1-4f9e-bdc5-74d585ae831d',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'index.html:error',message:'JavaScript error caught',data:{message:e.message,filename:e.filename,lineno:e.lineno,timestamp:Date.now()},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+      // #endregion
+    });
+  </script>
 
   </body>
 </html>
