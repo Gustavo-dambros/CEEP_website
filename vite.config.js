@@ -8,6 +8,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
+        'cursos': 'cursos.html',
         'administracao': 'src/cursos/administracao.html',
         'analise_e_desenvolvimento': 'src/cursos/ads.html',
         'edificacoes': 'src/cursos/edificacoes.html',

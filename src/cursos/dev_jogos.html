@@ -7,7 +7,7 @@
     <title>meu-projeto</title>
 
     <!-- IMPORTANTE: Tailwind entra por aqui -->
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="../javascript/main.js"></script>
     <script>
       // #region agent log
       fetch('http://127.0.0.1:7242/ingest/b6ea2c2b-23a1-4f9e-bdc5-74d585ae831d',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'adm-info.html:script',message:'Script tag executed',data:{scriptSrc:'/src/main.js',timestamp:Date.now()},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix',hypothesisId:'A'})}).catch(()=>{});
@@ -30,7 +30,7 @@
              flex justify-between items-center
              fixed top-0 left-0 px-4 z-20">
 
-             <a href="index.html">
+             <a href="/index.html">
               <div class="flex items-center gap-2">
                 <img class="h-10" src="./img/logo_ceep.png" alt="Logo CEEP">
                 <span class="font-medium">CEEP Cascavel</span>
@@ -39,7 +39,8 @@
 
       <nav>
         <ul class="flex gap-4">
-          <a href="index.html"><li class="cursor-pointer transition-all duration-500 hover:text-ceep_blue hover:underline hover:font-bold">Inicio</li></a>
+          
+          <a href="/index.html"><li class="cursor-pointer transition-all duration-500 hover:text-ceep_blue hover:underline hover:font-bold">Inicio</li></a>
           <a href="index.html"><li class="cursor-pointer transition-all duration-300 hover:text-ceep_blue hover:underline hover:font-bold">Nossos Cursos</li></a>
           <li class="cursor-pointer transition-all duration-300 hover:text-ceep_blue hover:underline hover:font-bold">Notícias</li>
           <li class="cursor-pointer transition-all duration-300 hover:text-ceep_blue hover:underline hover:font-bold">Contato</li>

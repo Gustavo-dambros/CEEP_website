@@ -7,7 +7,7 @@
     <title>meu-projeto</title>
 
     <!-- IMPORTANTE: Tailwind entra por aqui -->
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="../javascript/main.js"></script>
     <script>
       // #region agent log
       fetch('http://127.0.0.1:7242/ingest/b6ea2c2b-23a1-4f9e-bdc5-74d585ae831d',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'adm-info.html:script',message:'Script tag executed',data:{scriptSrc:'/src/main.js',timestamp:Date.now()},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix',hypothesisId:'A'})}).catch(()=>{});
