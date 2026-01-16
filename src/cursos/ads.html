@@ -8,7 +8,6 @@
 
     <!-- IMPORTANTE: Tailwind entra por aqui -->
 
-
     <script type="module" src="../javascript/main.js"></script>
     <script>
       // #region agent log
@@ -100,9 +99,9 @@
                 <h1 class="text-center text-2xl sm:text-3xl font-bold">Matriz curricular</h1>
                 <div class="w-full flex justify-center mt-4">
                 <ul class="flex flex-col sm:flex-row gap-3 sm:gap-6 text-center">
-                  <li class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none">Area de atuação</li>
-                  <li class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none">Conhecimentos</li>
-                  <li class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none">Estrutura</li>            
+                  <li id="Aatuacao" class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none">Area de atuação</li>
+                  <li id="conhecimento" class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none">Conhecimentos</li>
+                  <li id="estrutura" class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none">Estrutura</li>            
                 </ul>
                </div>
             </div>
@@ -111,53 +110,21 @@
             <div class="w-full mt-10 flex lg:px-40 items-center justify-center flex gap-6 flex-col lg:flex-row">
 
                 <!--Matriz ano1-->
-                <div class="w-3/5 lg:w-1/5 border-3 rounded-2xl  ">
-                  <ul class="text-center ">
-                    <li class=" m-3">1 Trimestre</li>
-                    <hr class="border-1">
-                    <li class=" m-2">ADS</li>
-                    <hr class="border-1">
-                    <li class=" m-2">ADS</li>
-                    <hr class="border-1">
-                    <li class=" m-2">ADS</li>
-                    <hr class="border-1">
-                    <li class=" m-2">ADS</li>
-                 
-
-                  </ul>
+                <div id="txt_atuacao"  class="w-2/3 text-center">
+                <h1>
+                  A área de desenvolvimento de sistemas envolve criar, implementar e manter softwares que atendam às necessidades de empresas ou usuários. O profissional dessa área trabalha com programação, análise de requisitos, testes e integração de sistemas, podendo atuar em desenvolvimento web, mobile, desktop ou em sistemas corporativos. É uma área voltada à solução de problemas, automação de processos e inovação tecnológica, com oportunidades em empresas de tecnologia, startups, indústrias, bancos e órgãos públicos.</h1>
               </div>
-                 <!--Matriz ano2-->
-                 <div class="w-3/5 lg:w-1/5 border-3 rounded-2xl  ">
-                <ul class="text-center">
-                  <li class=" m-3">2 Trimestre</li>
-                  <hr class="border-1">
-                  <li class=" m-2">ADS</li>
-                  <hr class="border-1">
-                  <li class=" m-2">ADS</li>
-                  <hr class="border-1">
-                  <li class=" m-2">ADS</li>
-                  <hr class="border-1">
-                  <li class=" m-2">ADS</li>
-               
 
-                </ul>
+                 <!--Matriz ano2-->
+                 <div id="txt_conhecimento" class="2/3 text-center lg:w-2/3   hidden">
+                <h1>
+                  Um curso técnico de Análise e Desenvolvimento de Sistemas ensina a planejar, desenvolver e manter softwares para diferentes plataformas, como web, desktop e mobile. Os alunos aprendem lógica de programação, linguagens como Java, Python e JavaScript, banco de dados, modelagem de sistemas, testes, integração de sistemas, boas práticas de programação e versionamento de código com Git. Além disso, o curso aborda metodologias ágeis, análise de requisitos e soluções de problemas, preparando o profissional para atuar em empresas de tecnologia, startups, e-commerces, indústrias e órgãos públicos.
+                </h1>
             </div>
             
              <!--Matriz ano3-->
-             <div class="w-3/5 lg:w-1/5 border-3 rounded-2xl  ">
-                    <ul class="text-center">
-                      <li class=" m-3">3 Trimestre</li>
-                      <hr class="border-1">
-                      <li class=" m-2">ADS</li>
-                      <hr class="border-1">
-                      <li class=" m-2">ADS</li>
-                      <hr class="border-1">
-                      <li class=" m-2">ADS</li>
-                      <hr class="border-1">
-                      <li class=" m-2">ADS</li>
-                   
-
-                    </ul>
+             <div id="txt_estrutura"  class="w-2/3 text-center hidden">
+                  <h1>Os laboratórios de Análise e Desenvolvimento de Sistemas do CEEP são um dos grandes diferenciais da instituição e refletem o compromisso com uma formação moderna e de excelência. O curso conta com 4 laboratórios totalmente equipados, dispondo de computadores e notebooks de última geração, preparados para atender às exigências atuais do mercado de tecnologia. Nesses ambientes, os alunos têm contato direto com softwares, linguagens e ferramentas profissionais, colocando em prática tudo o que aprendem em sala de aula. As aulas são dinâmicas e focadas no desenvolvimento real de sistemas, permitindo que o estudante ganhe experiência desde o início da formação. Mais do que infraestrutura de alto nível, o CEEP oferece um espaço que estimula a inovação, o aprendizado prático e o trabalho em equipe, preparando os alunos para se destacarem no mercado de trabalho. Com laboratórios modernos e uma proposta pedagógica voltada à prática, o CEEP forma profissionais prontos para os desafios da área de tecnologia da informação</h1>
                 </div>
             </div>
 
@@ -189,5 +156,6 @@ Mais do que infraestrutura de alto nível, o CEEP oferece um espaço que estimul
             </footer>
 
 
+            <script src="../javascript/ads.js"></script>
   </body>
 </html>
