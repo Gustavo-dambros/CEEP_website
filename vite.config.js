@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import { resolve } from 'path'
 
 export default defineConfig({
   base: '/CEEP_website/',
@@ -8,14 +9,14 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        'administracao': 'src/cursos/administracao.html',
-        'analise_e_desenvolvimento': 'src/cursos/ads.html',
-        'edificacoes': 'src/cursos/edificacoes.html',
-        'eletronica': 'src/cursos/eletronica.html',
-        'eletromecanica': 'src/cursos/eletromecanica.html',
-        'enfermagem': 'src/cursos/enfermagem.html',
-        'estetica': 'src/cursos/estetica.html',
-        'IA': 'src/cursos/IA.html',
+          administracao: resolve(__dirname, 'src/cursos/administracao.html'),
+        analise_e_desenvolvimento: resolve(__dirname, 'src/cursos/ads.html'),
+        edificacoes: resolve(__dirname, 'src/cursos/edificacoes.html'),
+        eletronica: resolve(__dirname, 'src/cursos/eletronica.html'),
+        eletromecanica: resolve(__dirname, 'src/cursos/eletromecanica.html'),
+        enfermagem: resolve(__dirname, 'src/cursos/enfermagem.html'),
+        estetica: resolve(__dirname, 'src/cursos/estetica.html'),
+        IA: resolve(__dirname, 'src/cursos/IA.html'),
       },
     },
   },
