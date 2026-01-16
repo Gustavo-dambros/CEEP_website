@@ -8,8 +8,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: './index.html',
-          administracao: resolve(__dirname, 'src/cursos/administracao.html'),
+        main: resolve(__dirname, 'index.html'),
+        cursos: resolve(__dirname, 'cursos.html'),
+        administracao: resolve(__dirname, 'src/cursos/administracao.html'),
         analise_e_desenvolvimento: resolve(__dirname, 'src/cursos/ads.html'),
         edificacoes: resolve(__dirname, 'src/cursos/edificacoes.html'),
         eletronica: resolve(__dirname, 'src/cursos/eletronica.html'),
