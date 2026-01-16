@@ -7,6 +7,8 @@
     <title>meu-projeto</title>
 
     <!-- IMPORTANTE: Tailwind entra por aqui -->
+
+
     <script type="module" src="../javascript/main.js"></script>
     <script>
       // #region agent log
@@ -32,7 +34,7 @@
 
              <a href="/index.html">
               <div class="flex items-center gap-2">
-                <img class="h-10" src="./img/logo_ceep.png" alt="Logo CEEP">
+                <img class="h-10" src="../img/logo_ceep.png" alt="Logo CEEP">
                 <span class="font-medium">CEEP Cascavel</span>
               </div>
         </a>
@@ -52,19 +54,29 @@
     </header>
 
     <main>
-       <div class="relative w-full py-12 px-4 sm:px-10 bg-white">
-        
-        <div class="w-full bg-ceep_blue rounded-2xl p-5">
-          
-        <div class="relative z-10">
-         <div class="ml-2 sm:ml-10">
+      <div class="relative w-full  lg:w-1/2 h-60  bg-ceep_blue lg:rounded-tr-2xl lg:rounded-br-2xl overflow-hidden mt-10 p-5">
+  
+        <!-- Imagem de fundo -->
+        <img 
+          src="../img/ADS.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+      
+        <!-- Conteúdo -->
+        <div class="relative z-10 ml-2 sm:ml-10">
           <div class="flex flex-col gap-1">
-            <h1 class="text-3xl sm:text-4xl text-white font-bold">Tecnico em Desenvolvimento de Sistemas</h1>
-            <h2 class="text-white text-base sm:text-lg">Duração: 3 Anos</h2>
+            <h1 class="text-4xl font-bold text-white drop-shadow-lg">
+              Técnico em Desenvolvimento de Sistemas
+            </h1>
+            <h2 class="text-white text-base sm:text-lg">
+              Duração: 3 Anos <span class="ml-5"> Matutino-Vespentino</span>
+            </h2>
+            <h2 class="text-white text-base sm:text-lg">
+             Intregrado ao Ensino
+            </h2>
+           
           </div>
-         </div>
         </div>
-        </div>
+      
+      </div>
 
         <div class="w-full min-h-screen">
           <div class="w-full flex flex-col md:flex-row justify-between">
@@ -79,7 +91,7 @@
 
 
             <div class="w-full md:w-3/6 px-0 md:px-0 mt-5 bg-white rounded-2xl shadow-2xl">
-            <img class="w-full h-64 sm:h-80 md:h-full object-cover rounded-2xl " src="img/ADS.jpg" alt="">
+            <img class="w-full h-64 sm:h-80 md:h-full object-cover rounded-2xl " src="../img/ADS.jpg" alt="">
             </div>
           </div>
 
@@ -88,9 +100,9 @@
                 <h1 class="text-center text-2xl sm:text-3xl font-bold">Matriz curricular</h1>
                 <div class="w-full flex justify-center mt-4">
                 <ul class="flex flex-col sm:flex-row gap-3 sm:gap-6 text-center">
-                  <li class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none"> 1 ano</li>
-                  <li class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none"> 2 ano</li>
-                  <li class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none"> 3 ano</li>            
+                  <li class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none">Area de atuação</li>
+                  <li class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none">Conhecimentos</li>
+                  <li class="w-48 sm:w-56 h-10 flex items-center justify-center mx-auto border-2 rounded-2xl transition-all hover:-translate-y-1 hover:-translate-x-2 hover:shadow-black-md active:translate-y-1 active:translate-x-2 active:shadow-none">Estrutura</li>            
                 </ul>
                </div>
             </div>
